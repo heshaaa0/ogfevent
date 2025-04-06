@@ -218,6 +218,11 @@ let count = 0;
 let resultValue = 101;
 
 spinBtn.addEventListener("click", () => {
+
+  // when User Exists and didPlay: true => error 
+  // when User Exists and didPlay: false => give chance to play & update didPlay: true
+
+
   totalPlayers++; // Increment total players when the button is clicked
   spinBtn.disabled = true;
 
